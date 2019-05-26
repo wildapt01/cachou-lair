@@ -77,16 +77,24 @@ i {
 
 main {
   display: flex;
+  flex-direction: column;
 }
 
 .card {
   width: 990px;
   height: 290px;
-  margin: 40px;
   background-color: #0d47a1;
   background-size: cover;
   box-shadow: 8px 6px 3px 1px rgba(0, 0, 0, 0.15);
   display: flex;
+}
+
+.card-id-odd {
+  margin: 75px 0 75px 40px;
+}
+
+.card-id-even {
+  margin: 75px 0 75px 560px;
 }
 
 .card-pix {
@@ -99,7 +107,7 @@ main {
 .card-content {
   width: 640px;
   height: 290px;
-  font-size: 14px;
+  font-size: 16px;
   color: #bbdefb;
   font-weight: 300;
   text-decoration: none solid rgb(187, 222, 251);
