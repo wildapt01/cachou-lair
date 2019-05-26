@@ -1,27 +1,32 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   background-image: url("assets/backgrounds-blue.png");
   background-size: cover;
   background-repeat: no-repeat;
   resize: both;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+header > img {
+  width: 100%;
+  height: 80vh;
 }
 
 .navbar {
   display: inline-flex;
   width: 100%;
-  height: 100px;
+  height: 15vh;
   opacity: 0.7;
   background-size: cover;
+  margin-bottom: 40px;
 }
 
 .navbar-title {
   width: 50%;
-  height: 96px;
-  font-family: Lato, sans-serif;
-  font-size: 80px;
+  height: 15vh;
+  font-size: 100px;
   color: #2196f3;
   font-weight: 300;
   font-style: italic;
@@ -38,12 +43,13 @@ body {
   margin-bottom: 14px;
   list-style: none;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 
 li:first-child {
   width: 108px;
 }
+
 li {
   width: 147px;
   height: 28px;
@@ -67,4 +73,42 @@ li {
 i {
   color: #1565c0;
   padding: 5px;
+}
+
+main {
+  display: flex;
+}
+
+.card {
+  width: 990px;
+  height: 290px;
+  margin: 40px;
+  background-color: #0d47a1;
+  background-size: cover;
+  box-shadow: 8px 6px 3px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.card-pix {
+  width: 350px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  width: 640px;
+  height: 290px;
+  font-size: 14px;
+  color: #bbdefb;
+  font-weight: 300;
+  text-decoration: none solid rgb(187, 222, 251);
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.card-title {
+  font-size: 24px;
+  padding: 5px;
+  text-align: end;
 }
