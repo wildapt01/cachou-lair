@@ -54,6 +54,7 @@ const createCard = (obj, indx) => {
   cardContent.className = "card-content";
   cardContent.append(cardTitle, cardText);
   document.querySelector(`#${cardDiv.id}`).append(cardContent);
+  return;
 };
 
 const loopCreate = arr => {
