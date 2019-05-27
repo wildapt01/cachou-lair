@@ -26,34 +26,48 @@ const content = [
   }
 ];
 
+// interior frame for image
+const createPixFrame = (url, id) => {
+  const cardPix = document.createElement("img");
+  const cardPixContainer = document.createElement("div");
+
+  cardPix.src = url;
+  cardPix.alt = "Pictures";
+  cardPixContainer.className = "card-pix";
+  cardPixContainer.appendChild(cardPix);
+  document.querySelector(id).append(cardPixContainer);
+};
+
+// interior frame for title and text
+const createContentFrame = (title, text, id) => {
+  const cardTitle = document.createElement("div");
+  const cardText = document.createElement("p");
+  const cardContent = document.createElement("div");
+
+  cardTitle.className = "card-title";
+  cardTitle.innerText = title;
+  cardText.innerText = text;
+  cardContent.className = "card-content";
+  cardContent.append(cardTitle, cardText);
+  document.querySelector(id).append(cardContent);
+};
+
 const createCard = (obj, indx) => {
+  // drawing card frame + animation
   const cardDiv = document.createElement("div");
   const classValue =
     (indx + 1) % 2 === 0 ? "card card-id-even" : "card card-id-odd";
-  cardDiv.className = classValue;
   const aosValue = (indx + 1) % 2 === 0 ? "fade-right" : "fade-left";
+
+  cardDiv.className = classValue;
   cardDiv.setAttribute("data-aos", aosValue);
   cardDiv.setAttribute("data-aos-duration", "1000");
   cardDiv.id = `card${indx}`;
   document.querySelector("main").appendChild(cardDiv);
 
-  const cardPix = document.createElement("img");
-  cardPix.src = obj.pixUrl;
-  cardPix.alt = "Pictures";
-  const cardPixContainer = document.createElement("div");
-  cardPixContainer.className = "card-pix";
-  cardPixContainer.appendChild(cardPix);
-  document.querySelector(`#${cardDiv.id}`).append(cardPixContainer);
+  createPixFrame(obj.pixUrl, `#${cardDiv.id}`);
 
-  const cardTitle = document.createElement("div");
-  cardTitle.className = "card-title";
-  cardTitle.innerText = `${obj.title}`;
-  const cardText = document.createElement("p");
-  cardText.innerText = obj.text;
-  const cardContent = document.createElement("div");
-  cardContent.className = "card-content";
-  cardContent.append(cardTitle, cardText);
-  document.querySelector(`#${cardDiv.id}`).append(cardContent);
+  createContentFrame(obj.title, obj.text, `#${cardDiv.id}`);
 };
 
 const loopCreate = arr => {
