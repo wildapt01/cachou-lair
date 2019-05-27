@@ -37,28 +37,20 @@ header > img {
 }
 
 .navbar-choices {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   width: 35%;
   padding: 0;
-  margin-bottom: 14px;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-}
-
-li:first-child {
-  width: 108px;
-}
-
-li {
-  width: 147px;
-  height: 28px;
+  margin-bottom: 5px;
+  justify-content: flex-end;
   font-family: Arial;
   font-size: 24px;
   color: #2196f3;
   font-weight: 400;
   text-decoration: none solid rgb(33, 150, 243);
-  text-align: center;
+  /* text-align: center; */
+
+  align-items: center;
 }
 
 .navbar-icons {
