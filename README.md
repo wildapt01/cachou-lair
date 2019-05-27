@@ -2,13 +2,23 @@
 
 Deployed on Github, built with simple HTML and CSS
 
-Our cat deserved a website and we spoil him. With discover his life, know some more about him and his breed.
+Our cat deserved a website and we spoil him. With this project, discover his life and know some more about him and his breed.
 
 ## Start
 
 Local: Clone and open `index.html` in your preferred browser.
 
 Deployed on Github Pages [ https://wildapt01.github.io/cachou-lair/](https://wildapt01.github.io/cachou-lair/)
+
+## Tech stack
+
+To keep things simple:
+
+- HTML5
+- CSS3
+- Javascript ES6 (DOM manipulation)
+- Animation with AOS library
+- Prototyping with [UXPin](https://www.uxpin.com/)
 
 ## Prototype
 
