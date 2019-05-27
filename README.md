@@ -6,7 +6,9 @@ Our cat deserved a website and we spoil him. With discover his life, know some m
 
 ## Start
 
-Open `index.html` in your preferred browser.
+Local: Clone and open `index.html` in your preferred browser.
+
+Deployed on Github Pages [HERE](https://github.com/wildapt01/cachou-lair)
 
 ## Prototype
 
