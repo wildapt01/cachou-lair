@@ -17,3 +17,7 @@ Open `index.html` in your preferred browser.
 Style guide:
 
 <img src="assets/style-guide.png" width="750" height="430" title="style-guide">
+
+## Animation
+
+Thanks to Michał Sajnóg for his [Animate On Scroll library](https://michalsnik.github.io/aos/) !

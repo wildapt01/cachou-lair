@@ -31,6 +31,9 @@ const createCard = (obj, indx) => {
   const classValue =
     (indx + 1) % 2 === 0 ? "card card-id-even" : "card card-id-odd";
   cardDiv.className = classValue;
+  const aosValue = (indx + 1) % 2 === 0 ? "fade-right" : "fade-left";
+  cardDiv.setAttribute("data-aos", aosValue);
+  cardDiv.setAttribute("data-aos-duration", "1000");
   cardDiv.id = `card${indx}`;
   document.querySelector("main").appendChild(cardDiv);
 
