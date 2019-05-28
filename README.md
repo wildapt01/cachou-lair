@@ -22,7 +22,8 @@ To keep things simple:
 
 ## File structure
 
-```.
+```
+.../cachou-lair/
 ├── README.md
 ├── assets
 │   ├── blue-jay.png
