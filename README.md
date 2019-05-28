@@ -20,6 +20,30 @@ To keep things simple:
 - Animation with AOS library
 - Prototyping with [UXPin](https://www.uxpin.com/)
 
+## File structure
+
+```.
+├── README.md
+├── assets
+│   ├── blue-jay.png
+│   ├── cachou-7mois.png
+│   ├── cachou-play.png
+│   ├── cachou-sleep.png
+│   ├── favicon.ico
+│   ├── laying-cat.png
+│   ├── neva-masquerade.png
+│   ├── prototype1.png
+│   ├── prototype2.png
+│   ├── style-guide.png
+│   └── three-cats.png
+├── button-top.js
+├── create-card.js
+├── index.html
+└── style.css
+
+1 directory, 16 files
+```
+
 ## Prototype
 
 <img src="assets/prototype1.png" width="750" height="430" title="prototype1">
