@@ -9,19 +9,23 @@ const content = [
     title: "MORE ABOUT SIBERIANS",
     pixUrl: "assets/three-cats.png",
     text:
-      "We are a very old breed, sturdy and powerful. We reach our full adult size at 3 to 5 years old and we can weigh in at 20 to 25 lbs. Some say we are the base breed for all long-hair cats. Great jumpers, we are also very good hunters. Our personality is on the mellow side and we are truly chill cats. We love to play and be around our servants, just in case they get lost and need to be reminded of our presence. \n\n To know more, click on this Wikipedia link."
+      "We are a very old breed, sturdy and powerful. We reach our full adult size at 3 to 5 years old and we can weigh in at 20 to 25 lbs. Some say we are the base breed for all long-hair cats. Great jumpers, we are also very good hunters. Our personality is on the mellow side and we are truly chill cats. We love to play and be around our servants, just in case they get lost and need to be reminded of our presence.",
+    linkUrl: [
+      "To know more click this link",
+      "https://en.wikipedia.org/wiki/Siberian_cat"
+    ]
   },
   {
     title: "NEVA MASQUERADE?",
     pixUrl: "assets/neva-masquerade.png",
     text:
-      "Though Siberians are usually tabbies or tortoise, my color is labeled as seal point. It means that at some point Siamese genes were introduced in our genetic make-up. \n\nMy coloration is sometimes considered as a distinct Siberian breed."
+      "Though Siberians are usually tabby or tortoise, my color is labeled as colour point. It means that at some point Siamese genes were introduced in our genetic make-up. \n\nMy coloration is sometimes considered as a distinct Siberian breed."
   },
   {
     title: "WHAT I LIKE",
     pixUrl: "assets/cachou-play.png",
     text:
-      "PLAYING - Like all cats, fluffy moving things are made for us to chase. What a blast! \n\n EATING - I am really growing up and I need good meals. \n\n BEING PET - There is almost nothing better than a nice rub behind the ears!"
+      "PLAYING - Like all cats, fluffy moving things are made for us to chase. What a blast! \n\n EATING - I am really growing up and I need good meals. \n\n BEING PET - There is almost nothing better than a nice rub behind the ears, it feels just purrrrr-fect!"
   },
   {
     title: "SLEEPING",
@@ -50,8 +54,10 @@ const createPixFrame = (url, id) => {
   document.querySelector(id).append(cardPixContainer);
 };
 
+// add a hyperlink when it exists in content
+
 // interior frame for title and text
-const createContentFrame = (title, text, id) => {
+const createContentFrame = (title, text, id, linkUrl) => {
   const cardTitle = document.createElement("div");
   const cardText = document.createElement("p");
   const cardContent = document.createElement("div");
@@ -60,7 +66,17 @@ const createContentFrame = (title, text, id) => {
   cardTitle.innerText = title;
   cardText.innerText = text;
   cardContent.className = "card-content";
-  cardContent.append(cardTitle, cardText);
+
+  if (linkUrl) {
+    const cardLinkUrl = document.createElement("a");
+    cardLinkUrl.innerText = linkUrl[0];
+    cardLinkUrl.setAttribute("href", linkUrl[1]);
+    cardLinkUrl.style.color = "#bbdefb";
+    cardContent.append(cardTitle, cardText, cardLinkUrl);
+  } else {
+    cardContent.append(cardTitle, cardText);
+  }
+
   document.querySelector(id).append(cardContent);
 };
 
@@ -77,9 +93,10 @@ const createCard = (obj, indx) => {
   cardDiv.id = `card${indx}`;
   document.querySelector("main").appendChild(cardDiv);
 
-  createPixFrame(obj.pixUrl, `#${cardDiv.id}`);
-
-  createContentFrame(obj.title, obj.text, `#${cardDiv.id}`);
+  // drawing card interior elements
+  const { title, text, pixUrl, linkUrl } = obj;
+  createPixFrame(pixUrl, `#${cardDiv.id}`);
+  createContentFrame(title, text, `#${cardDiv.id}`, linkUrl);
 };
 
 const loopCreate = arr => {
