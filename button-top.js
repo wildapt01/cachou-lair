@@ -1,5 +1,6 @@
 // Scroll back to the top button - event handler
 // NB: adapted for multiple browsers
+// appears after 600px scrolling down
 
 window.onscroll = () => {
   scrollFunction();
