@@ -15,7 +15,7 @@ const content = [
     title: "NEVA MASQUERADE?",
     pixUrl: "assets/neva-masquerade.png",
     text:
-      "Though Siberians are usually tabbies or tortoise, my color is labeled as seal point. It means that at some point Siamese genes were introduced in our genetic make-up. My coloration is sometimes considered as a distinct Siberian breed."
+      "Though Siberians are usually tabbies or tortoise, my color is labeled as seal point. It means that at some point Siamese genes were introduced in our genetic make-up. \n\nMy coloration is sometimes considered as a distinct Siberian breed."
   },
   {
     title: "WHAT I LIKE",
