@@ -25,7 +25,7 @@ const content = [
     title: "WHAT I LIKE",
     pixUrl: "assets/cachou-play.png",
     text:
-      "PLAYING - Like all cats, fluffy moving things are made for us to chase. What a blast! \n\n EATING - I am really growing up and I need good meals. \n\n BEING PET - There is almost nothing better than a nice rub behind the ears, it feels just purrrrr-fect!"
+      "PLAYING - Like all cats, I like chasing fluffy moving things. What a blast! \n\n EATING - I am really growing up and I need good meals. \n\n BEING PET - There is almost nothing better than a nice rub behind the ears, it feels just purrrrr-fect!"
   },
   {
     title: "SLEEPING",
