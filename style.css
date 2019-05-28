@@ -2,9 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background-image: url("assets/backgrounds-blue.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #bbdefb;
   resize: both;
   overflow-y: scroll;
 }
@@ -108,7 +106,8 @@ main {
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 22px;
   padding: 5px;
   text-align: end;
+  font-weight: 600;
 }
