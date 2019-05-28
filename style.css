@@ -87,7 +87,7 @@ main {
   margin: 75px 0 75px 560px;
 }
 
-.card-pix {
+.card-pix-container {
   width: 350px;
   height: 290px;
   display: flex;
