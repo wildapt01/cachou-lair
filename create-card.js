@@ -54,8 +54,6 @@ const createPixFrame = (url, id) => {
   document.querySelector(id).append(cardPixContainer);
 };
 
-// add a hyperlink when it exists in content
-
 // interior frame for title and text
 const createContentFrame = (title, text, id, linkUrl) => {
   const cardTitle = document.createElement("div");
@@ -67,6 +65,7 @@ const createContentFrame = (title, text, id, linkUrl) => {
   cardText.innerText = text;
   cardContent.className = "card-content";
 
+  // add a hyperlink when it exists in content
   if (linkUrl) {
     const cardLinkUrl = document.createElement("a");
     cardLinkUrl.innerText = linkUrl[0];
