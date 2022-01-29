@@ -72,7 +72,7 @@ main {
 
 .card {
   width: 990px;
-  height: 290px;
+  height: 320px;
   background-color: #0d47a1;
   background-size: cover;
   box-shadow: 8px 6px 3px 1px rgba(0, 0, 0, 0.15);
@@ -84,7 +84,7 @@ main {
 }
 
 .card-id-even {
-  margin: 75px 0 75px 500px;
+  margin: 75px 0 75px 445px;
 }
 
 .card:last-child {
@@ -93,15 +93,16 @@ main {
 
 .card-pix-container {
   width: 350px;
-  height: 290px;
+  height: 300px;
   display: flex;
+  margin-top: 1%;
   justify-content: center;
 }
 
 .card-content {
   width: 640px;
   height: 290px;
-  font-size: 18px;
+  font-size: 1.1em;
   color: #bbdefb;
   font-weight: 300;
   text-decoration: none solid rgb(187, 222, 251);
