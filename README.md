@@ -16,7 +16,7 @@ To keep things simple:
 
 - HTML5
 - CSS3
-- Javascript ES6 (DOM manipulation)
+- Javascript ES6
 - Animation with AOS library
 - Prototyping with [UXPin](https://www.uxpin.com/)
 
